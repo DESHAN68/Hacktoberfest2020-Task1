@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+    int deci_num,i=0,j;
+    int arry[100];
+    printf("ENTER DECIMAL NUMBER : ");
+    scanf("%d",&deci_num);
+
+    if(deci_num==0)
+    {
+        printf("binary value is : %d",deci_num);
+    }
+    else if(deci_num==1)
+    {
+        printf("binary value is : %d",deci_num);
+    }
+    else
+    {
+        int Ndeci_num=deci_num;
+        while(Ndeci_num>=1)
+        {
+            arry[i]=Ndeci_num%2;
+            Ndeci_num=Ndeci_num/2;
+            i++;
+            j=i-1;
+        }
+        printf("binary value is : ");
+        for(i=j ; i>=0 ; --i)
+        {
+            printf("%d ",arry[i]);
+        }
+
+    }
+
+}
